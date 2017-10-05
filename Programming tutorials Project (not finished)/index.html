@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/reset-css-style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/transition.css">
+	<link rel="stylesheet" type="text/css" href="css/kontakti.css">
+	<title>Code For Everything</title>
+	<script src="script/javascript.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<header class="header">
+		<div class="logo-menu">
+			<h1><a href="index.html">Code for Everything</a></h1>
+			<nav class="main-menu">
+				<ul>
+					<li><a href="index.html">Ballina</a></li>
+					<li><a href="about-us.html">Kush jemi ne</a></li>
+					<li><a href="programim.html">Programim</a></li>
+					<li><a href="kontakti.html">Na kontaktoni</a></li>
+					<div id="butoni">
+						<li><button class="main-button" onclick="document.getElementById('id01').style.display='block'" style="width:auto; overflow:none;">Login</button>
+					</div>
+
+						<div id="id01" class="modal">
+  
+							<form class="modal-content animate" onsubmit="return valid()" method="post">
+								<div class="closebutton">
+								<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						        </div>
+
+							<div class="container">
+								<label><b>Username</b></label>
+								<input type="text" placeholder="Enter Username" name="username" required><br />
+
+								<label><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" pattern=".{8,}" name="password" title="8 or more characters" required><br />
+								<button type="submit" class="submit">Login</button>
+								<input type="checkbox" checked="checked"> Remember me
+							</div>
+
+							<div class="container" style="background-color:#f1f1f1">
+								<span onclick="document.getElementById('id01').style.display='none'"><button type="button"  class="cancel">Cancel</button></span>
+								<span class="psw">Forgot <a href="https://login.live.com" style="color:#04b49d" title="Login to your hotmail account!">password?</a></span>
+	
+								<!-- Button to open the modal -->
+								<button onclick="document.getElementById('id09').style.display='block'"  onclick="document.getElementById('id01').style.display='none'" class="submit" style="float:right;">Sign Up</button>
+
+								<!-- The Modal (contains the Sign Up form) -->
+								<div id="id09" class="modal2">
+								  <span onclick="document.getElementById('id09').style.display='none'" id="test" class="close" title="Close Modal" style="color:white;">&times;</span>
+								  <form class="modal-content animate" action="/action_page.php">
+								    <div class="container2">
+								      <label style="color:white;"><b>Email</b></label>
+								      <input type="text" placeholder="Enter Email" name="email" required>
+
+								      <label style="color:white;"><b>Password</b></label>
+								      <input type="password" placeholder="Enter Password" name="psw" required>
+
+								      <label style="color:white;"><b>Repeat Password</b></label>
+								      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+								      <input type="checkbox" checked="checked"> <label style="color:white;">Remember me</label>
+								      <p style="color:white;">By creating an account you agree to our <a href="#" style="color:#04b49d;">Terms & Privacy</a>.</p>
+
+								      <div class="clearfix">
+								        <button type="button" onclick="document.getElementById('id09').style.display='none'" class="cancel">Cancel</button>
+								        <button type="submit" class="submit">Sign Up</button>
+								      </div>
+								    </div>
+								  </form>
+								</div>
+							</div>
+							</form>
+						</div>
+				</ul>
+			</nav>
+		</div>	
+	</header>
+	<section class="conteiner">
+		<section class="main-banner">
+			<section class="banner-text">
+				<article class="behu-programer">
+					<h1>Bëhu edhe ti programer</h1>
+					<p>Secili nga ne mund të bëhet një
+					   programer i suksesshëm.<br>
+					   Nuk është me rëndësi sa jeni i shkolluar.<br>
+					   Programimi është një zanat të cilin mund ta mësoj çdokush.<br>
+					   Si fillestar që jeni, ne ju sugjerojm që të filloni me: HTML, CSS, dhe pakës më vonë me Javascript.<br>
+					   Asnjëher mos e ngatërroni Javascript dhe Java, krejtësisht janë të ndryshme...
+					</p>
+				</article>
+				<article class="dua-te-behem">
+					<h1>Unë dua të bëhem:</h1>
+						<p>Web Dizajner dhe Zhvillues<br>
+						Desktop dhe Mobile Programer<br>
+						Database Administrator<p>
+				</article>
+			</section>
+		</section>
+		<section class="temat">
+			<div class="temat-title">
+				<h1>Temat:</h1>
+			</div>
+		</section>	
+				<div class="gjuhet1">
+					<div class="gjuhet1-korniza">
+						<p class="html-prog">HTML</p>
+						<p class="css-prog">CSS</p>
+						<p class="js-prog">Javascript</p>
+						<p class="cpp-prog">C++</p>
+					</div>
+				</div>	
+			</section>
+			
+	<footer class="main-footer">
+		
+		<div class="footer-width">
+		<div id="maps">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46940.21003857651!2d21.123707891000763!3d42.66637476674262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPrishtina!5e0!3m2!1sen!2s!4v1488419823004" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>	
+				<article class="address">
+					Rr.Ahmet Krasniqi, 10000 Prishtinë.
+				</article>
+					<article class="in-memory">
+						Bill Gates,<br>Steve Jobs,<br>Dennis Ritchie,<br>Paul Allen
+					</article> 
+						<nav class="footer-menu">
+							<ul>
+								<li><a href="index.html">Ballina</a></li>
+								<li><a href="about-us.html">Kush jemi ne</a></li>
+								<li><a href="programim.html">Programim</a></li>
+								<li><a href="kontakti.html">Na kontaktoni</a></li>
+							</ul>
+						</nav>
+			</div>			
+			<p>&copy 2017 Code For Everything</p>
+		<div id="out"></div>
+		<table border="1px solid #d3d3d3;">
+	</footer>
+</body>
+</html>

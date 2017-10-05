@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset-css-style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/transition.css">
+		<link rel="stylesheet" type="text/css" href="css/kontakti.css">
+		<title>Code For Everything</title>
+		<meta charset="utf-8">
+		<script src="C:\Users\meritonf\Desktop\web project 2017\scripts\jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				TestEvent();
+			});
+			function TestEvent(){
+				$('#secondBtn').click(function(){
+					alert('FEEDBACK has been submited!');
+				});
+			}
+		</script>
+	</head>
+<body>
+	<header class="header">
+		<div class="logo-menu">
+			<h1><a href="index.html">Code for Everything</a></h1>
+				<nav class="main-menu">
+					<ul>
+						<li><a href="index.html">Ballina</a></li>
+						<li><a href="about-us.html">Kush jemi ne</a></li>
+						<li><a href="programim.html">Programim</a></li>
+						<li><a href="kontakti.html">Na kontaktoni</a></li>
+						<div id="butoni">
+						<li><button class="main-button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+					</div>
+
+						<div id="id01" class="modal">
+  
+							<form class="modal-content animate" onsubmit="return valid()" method="post">
+								<div class="closebutton">
+								<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						        </div>
+
+							<div class="container">
+								<label><b>Username</b></label>
+								<input id="2" type="text" placeholder="Enter Username" name="username" required><br />
+
+								<label><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" pattern=".{8,}" name="password" title="8 or more characters" required><br />
+        
+								<button type="submit" class="submit">Login</button>
+								<input type="checkbox" checked="checked"> Remember me
+							</div>
+
+							<div class="container" style="background-color:#f1f1f1">
+								<span onclick="document.getElementById('id01').style.display='none'"><button type="button"  class="cancel">Cancel</button></span>
+								<span class="psw">Forgot <a href="https://login.live.com" style="color:#04b49d" title="Login to your hotmail account!">password?</a></span>
+								<span class="register"><a href="Register.html" style="color:#04b49d" title="Create new CfE account!">Create&nbsp;account!</a></span>
+							</div>
+							</form>
+						</div>
+						</li>
+					</ul>
+				</nav>
+		</div>	
+	</header>
+		<fieldset style="margin:5% 10% 5% 10%">
+		 <legend>New Account</legend>
+			<form id="kontakti" action="#" method="POST">
+				<div class="programim">
+					<label>Select your Programming language:</label>
+						<select id = "myList">
+						   <option value = "1">HTML</option>
+						   <option value = "2">CSS</option>
+						   <option value = "3">JAVASCRIPT</option>
+						   <option value = "4">C++</option>
+						</select>
+				</div><br />
+				<div class="emri">
+					<label for="name">Your fullname:</label><br />
+					<input id="name" class="input" name="name" type="text" placeholder="Type your name" size="100" /><br />
+				</div>
+				<div class="email">
+					<label for="email">Your email:</label><br />
+					<input id="email" class="input" name="email" type="text"  placeholder="Type your EMAIL Address" size="100" /><br />
+				</div>
+				<div class="Password1">
+					<label><b>Your Password:</b></label>
+					<input type="password" placeholder="Enter Password" pattern=".{8,}" name="password" title="8 or more characters" required><br />
+				</div>
+				<div class="Password2">
+					<label><b>Confirm Your Password:</b></label>
+					<input type="password" placeholder="Enter Password" pattern=".{8,}" name="password" title="8 or more characters" required><br />
+				</div>
+				<div class="bday">
+				<label for="birthday">Your Birthday:</label><br />
+					<input type="datetime-local" name="bdaytime">
+				</div>
+				<input id="secondBtn" type="submit" value="Submit" />
+			</form>
+		</fieldset>
+
+
+		<footer class="main-footer">
+			<div class="footer-width">
+				<article class="address">
+					Rr.Ahmet Krasniqi, 10000 Prishtinë.
+				</article>
+					<article class="in-memory">
+						Bill Gates,<br>Stive Jobs,<br>Dennis Ritchie,<br>Paul Allen
+					</article> 
+						<nav class="footer-menu">
+							<ul>
+								<li><a href="index.html">Ballina</a></li>
+								<li><a href="about-us.html">Kush jemi ne</a></li>
+								<li><a href="programim.html">Programim</a></li>
+								<li><a href="kontakti.html">Na kontaktoni</a></li>
+							</ul>
+						</nav>
+			</div>			
+				<p>&copy 2017 Code For Everything</p>
+			<div id="out"></div>
+			<table border="1px solid #d3d3d3;">
+		</footer>
+	</body>
+</html>

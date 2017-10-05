@@ -1,0 +1,41 @@
+.carddiv {
+width:200px; 
+height:250px; 
+position:relative;
+transform-style: preserve-3d;
+transform-origin: 100% 130px;
+transition: all 0.7s ease;
+}
+.container:hover .carddiv {
+-webkit-transform: rotateX(-180deg);
+transform: rotateX(-180deg);
+}
+.frontofcard, .backofcard {
+width:400px;
+ height:250px;
+ position:absolute; 
+ left:0; 
+-webkit-backface-visibility:hidden;
+backface-visibility:hidden;
+color:black;
+margin-left:50px;
+display:flex;
+max-height:250px;
+max-width:400px;
+}
+.backofcard {
+padding-top:50px;
+-webkit-transform: rotateX(180deg);
+transform: rotateX(180deg);
+}
+legend{
+	color: black;
+    text-shadow: 10px 15px 5px #04b49d, 0 0 25px #04b49d, 0 0 5px #04b49d;
+	font-size:30px;
+}
+
+.meriton:hover,.salih:hover,.fatlum:hover{
+	border: 2.8pt solid #04b49d;
+	text-align:center;
+	border-radius: 1em;
+}

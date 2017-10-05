@@ -1,0 +1,611 @@
+/*.header,
+.logo-menu,
+.main-menu ul,
+.main-banner,
+.banner-text,
+.temat,
+.gjuhet1,
+.gjuhet1-korniza,
+.main-footer,
+.footer-width,
+.footer-menu ul{
+	display: flex;
+}
+.header{
+	background-color: #04b49d;
+	border-bottom: 1px solid silver;
+}
+.logo-menu{
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.main-menu ul{
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.main-menu ul li{
+	list-style-type: none;
+	padding: 10px;
+}
+.main-menu ul li a{
+	color: white;
+	font-weight: 600;
+	text-decoration: none;
+}
+.main-menu ul li a:hover{
+	color: orange;
+}
+.main-banner{
+	background: url("../images/banner-image.jpg");
+	min-height: 48.9vh;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #a8a9a9;
+	justify-content: center;
+	align-items: center;
+}
+.banner-text{
+	justify-content: center;
+}
+.behu-programer{
+	flex-grow: 1;
+}
+.dua-te-behem{
+	flex-grow: 2;
+}
+.behu-programer, 
+.dua-te-behem{
+	padding: 1.5em;
+	margin: 2em;
+	background-color: rgba(0,0,0,.50);
+	border: 1px solid white;
+	border-radius: .5em;
+}
+.behu-programer h1, .dua-te-behem h1{
+	font-size: 1.8em;
+	color: white;
+	margin-bottom: .4em;
+}
+.behu-programer p {
+	color: white;
+	line-height: 1.4em;
+}
+.dua-te-behem p{
+	color: white;
+	line-height: 2.1em;
+}
+.temat{
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid silver;
+}
+.temat .temat-title{
+	width: 70%;
+}
+.temat-title h1{
+	color: white;
+	font-size: 1.25em;
+}
+.gjuhet1{
+	background-color: #ececec;
+}
+.gjuhet1-korniza{
+	width: 70%;
+	margin: 30px auto;
+	flex-wrap: wrap;
+}
+.gjuhet1-korniza p{
+	flex: 1 150px;
+	border: 1px solid black;
+	margin: 20px;
+	padding: 5em 0;
+	text-align: center;
+	border-radius: .4em;
+	background-color: #04b49d;
+	color: white;
+	font-weight: 600;
+	font-family: cursive;
+	transition-duration: 1.5s;
+	/*ketu transition duration ndodhin ne perudha te ndryshem*/
+/*	transition: transform: 1.5s;
+}*/
+
+.header,
+.logo-menu,
+.main-menu ul,
+.main-banner,
+.banner-text,
+.temat,
+.gjuhet1,
+.gjuhet1-korniza,
+.footer-width,
+.footer-menu ul{
+	display: flex;
+}
+.main-footer{
+	background-color: #000000;
+	padding: 1em 0 0 23em;
+	flex-direction: column;
+	align-items: center;
+}
+#maps{
+	display:flex;
+	margin-left:-350px;
+}
+.footer-width{
+	width: 70%;
+	flex-wrap: wrap;
+}
+.footer-width .address{
+	flex-grow: 1;
+	margin-top:60px;
+	margin-left:20px;
+}
+.footer-width .in-memory{
+	display: flex;
+	flex-grow: 3;
+	justify-content: center;
+	line-height: 1.4em;
+	margin-top:100px;
+}
+.footer-width .footer-menu{
+	flex-grow: 1;
+	margin-top:60px;
+}
+.footer-menu ul li{
+	margin: 0 10px;
+}
+.footer-menu ul li a{
+	text-decoration: none;
+	color: silver;
+}
+.footer-menu ul li a:hover{
+	color: orange;
+}
+.footer-menu ul{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.main-footer .footer-width article, p{
+	color:silver;
+}
+.main-footer p {
+	margin: 2em 0 .3em 0;
+	border-top: 1px solid silver;
+	width: 70%;
+	text-align: right;
+	font-size: .8em;
+	padding-top: .2em;
+}
+.header{
+	background-color: #04b49d;
+	border-bottom: 1px solid silver;
+}
+.logo-menu{
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	height:auto;
+}
+.logo-menu h1 a{
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px #04b49d, 0 0 5px yellow;
+	font-size:30px; 	
+	text-decoration:none;
+}
+.main-menu ul{
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.main-menu ul li{
+	list-style-type: none;
+	padding: 10px;
+}
+.main-menu ul li a{
+	color: white;
+	font-weight: 600;
+	text-decoration: none;
+}
+.main-banner{
+	background: url("../images/banner-image.jpg");
+	min-height: 48.9vh;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #a8a9a9;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-text{
+	justify-content: center;
+}
+.behu-programer{
+	flex-grow: 1;
+}
+.dua-te-behem{
+	flex-grow: 2;
+}
+.behu-programer, 
+.dua-te-behem{
+	padding: 1.5em;
+	margin: 2em;
+	background-color: rgba(0,0,0,.50);
+	border: 1px solid white;
+	border-radius: .5em;
+}
+.behu-programer h1, .dua-te-behem h1{
+	font-size: 1.8em;
+	color: white;
+	margin-bottom: .4em;
+}
+.behu-programer p {
+	color: white;
+	line-height: 1.4em;
+}
+.dua-te-behem p{
+	color: white;
+	line-height: 2.1em;
+}
+.temat{
+	background-color: black;
+	min-height: 5vh;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid silver;
+}
+.temat .temat-title{
+	width: 70%;
+}
+.temat-title h1{
+	color: white;
+	font-size: 1.25em;
+}
+.gjuhet1{
+	background-color: #ececec;
+}
+.gjuhet1-korniza{
+	width: 70%;
+	margin: 30px auto;
+	flex-wrap: wrap;
+}
+.gjuhet1-korniza p{
+	flex: 1 150px;
+	border: 1px solid black;
+	margin: 20px;
+	padding: 5em 0;
+	text-align: center;
+	border-radius: .4em;
+	background-color: #04b49d;
+	color: black;
+	font-weight: 600;
+	font-family: cursive;
+}
+.js-prog{
+	background:url("../images/js.png");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+.html-prog{
+	background:url("../images/html.png");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+.css-prog{
+	background:url("../images/css.png");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+.c-prog{
+	background:url("../images/c.jpg");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+
+/*Disa 2D TRANSITIONS per temat kryesore te ballines*/
+
+/* Html 2D TRANSITIONS*/
+@-webkit-keyframes html-prog {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes html-prog {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.html-prog {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.html-prog:hover, .html-prog:focus, .html-prog:active {
+  -webkit-animation-name: html-prog ;
+  animation-name: html-prog ;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* c++ 2D TRANSITIONS*/
+@-webkit-keyframes cpp-prog {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes cpp-prog {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.cpp-prog {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.cpp-prog:hover, .cpp-prog:focus, .cpp-prog:active {
+  -webkit-animation-name: cpp-prog ;
+  animation-name: cpp-prog ;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* css 2D TRANSITIONS*/
+@-webkit-keyframes css-prog {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes css-prog {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.css-prog {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.css-prog:hover, .css-prog:focus, .css-prog:active {
+  -webkit-animation-name: css-prog ;
+  animation-name: css-prog ;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* javascript 2D TRANSITIONS*/
+@-webkit-keyframes js-prog {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes js-prog {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.js-prog {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.js-prog:hover, .js-prog:focus, .js-prog:active {
+  -webkit-animation-name: js-prog ;
+  animation-name: js-prog ;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/*  --------->   Log in BUTTONI   <----------   */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    /*width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;*/
+    width: 100%;
+    padding: 12px;  
+    border: 2px solid #04b49d; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+}
+
+/* Set a style for all buttons */
+.main-button{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+#butoni:hover{
+	background-color:#026457;
+	color:white;
+}
+
+/* Extra styles for the cancel button */
+.cancel {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.cancel:focus,.cancel:hover{
+	cursor: pointer;
+}
+.submit{
+	width: auto;
+    padding: 10px 18px;
+    background-color: #04b49d;
+}
+.submit:focus,.submit:hover{
+	cursor: pointer;
+}
+
+/* Center the image and position the close button */
+.closebutton{
+    text-align: center;
+    margin-bottom: 18px;
+    margin-right:-15px;
+    position: relative;
+}
+
+
+.container {
+    padding: 7px;
+}
+.container2{
+  padding:7px;
+  width:50%;
+  margin:0px 20px 0px 25%;
+}
+
+span.psw {
+   //float: left;
+   font-size: 12px;
+    padding-top: 16px;
+}
+span.register{
+  float:right;
+  padding-top: 16px;
+  text-decoration: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0%;
+    top:5.85%;
+    width: 100%; /* Full width */
+    height: 54%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal2{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0%;
+    top:5.85%;
+    width: 100%; /* Full width */
+    height: 54%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(46,117,114  ); /* Fallback color */
+    background-color: rgba(46,117,114,1); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 1.45% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+
+
+
+
